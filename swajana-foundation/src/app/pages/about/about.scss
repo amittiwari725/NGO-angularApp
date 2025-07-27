@@ -1,0 +1,262 @@
+// Hero Section
+.hero-section {
+  background: linear-gradient(135deg, var(--soft-blue), var(--light-green));
+  padding: 100px 0;
+  
+  .hero-content {
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+  }
+  
+  .hero-image {
+    text-align: center;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
+  }
+}
+
+// Story Content
+.story-content {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    
+    &.lead {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--primary-blue);
+    }
+  }
+}
+
+// Value Cards
+.value-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px var(--shadow);
+  height: 100%;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  .value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    i {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  
+  h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// Team Cards
+.team-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px var(--shadow);
+  transition: transform 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .team-info {
+    padding: 1.5rem;
+    
+    h5 {
+      color: var(--text-dark);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .team-role {
+      color: var(--primary-blue);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .team-bio {
+      color: var(--text-light);
+      line-height: 1.5;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Impact Stats
+.impact-stat {
+  text-align: center;
+  padding: 2rem 1rem;
+  
+  .impact-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+  
+  .impact-label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+}
+
+// Call to Action Section
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+  padding: 100px 0;
+  
+  .cta-buttons {
+    .btn {
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    text-align: center;
+    
+    .hero-content {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+    
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
+  .value-card {
+    margin-bottom: 2rem;
+  }
+  
+  .team-card {
+    margin-bottom: 2rem;
+  }
+  
+  .impact-stat {
+    margin-bottom: 2rem;
+    
+    .impact-number {
+      font-size: 2rem;
+    }
+  }
+  
+  .cta-section {
+    padding: 60px 0;
+    
+    .cta-buttons {
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    .hero-content {
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .story-content {
+    p {
+      font-size: 1rem;
+      text-align: left;
+      
+      &.lead {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
+  .value-card {
+    padding: 1.5rem 1rem;
+    
+    .value-icon {
+      width: 60px;
+      height: 60px;
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
