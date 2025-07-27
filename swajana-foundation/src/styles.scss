@@ -1,0 +1,121 @@
+/* Bootstrap imports */
+@use 'bootstrap/scss/bootstrap';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Custom color palette for SWAJANA Foundation */
+:root {
+  --primary-blue: #4A90E2;
+  --soft-blue: #E3F2FD;
+  --accent-green: #4CAF50;
+  --light-green: #E8F5E8;
+  --pure-white: #FFFFFF;
+  --text-dark: #2C3E50;
+  --text-light: #7F8C8D;
+  --border-light: #E0E0E0;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--pure-white);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+/* Custom button styles */
+.btn-primary-custom {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: white;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  
+  &:hover {
+    background-color: #3A7BC8;
+    border-color: #3A7BC8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+}
+
+.btn-success-custom {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+  color: white;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  
+  &:hover {
+    background-color: #45A049;
+    border-color: #45A049;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+}
+
+/* Section styling */
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background-color: var(--soft-blue);
+}
+
+.section-white {
+  background-color: var(--pure-white);
+}
+
+/* Card styles */
+.card-custom {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px var(--shadow);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .section { padding: 60px 0; }
+}

@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/">
+      <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=40&h=40&q=80" 
+           alt="SWAJANA Foundation" class="logo-img me-2">
+      <span class="brand-text">SWAJANA Foundation</span>
+    </a>
+
+    <!-- Mobile toggle button -->
+    <button class="navbar-toggler" type="button" (click)="toggleMobileMenu()" 
+            [attr.aria-expanded]="isMobileMenuOpen" aria-controls="navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav" [class.show]="isMobileMenuOpen">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mission" routerLinkActive="active">Our Mission</a>
+        </li>
+        <li class="nav-item dropdown" [class.show]="isDropdownOpen">
+          <a class="nav-link dropdown-toggle" href="#" role="button" (click)="toggleDropdown($event)" 
+             [attr.aria-expanded]="isDropdownOpen">
+            Programs
+          </a>
+          <ul class="dropdown-menu" [class.show]="isDropdownOpen">
+            <li><a class="dropdown-item" routerLink="/programs">Education Programs</a></li>
+            <li><a class="dropdown-item" routerLink="/success-stories">Success Stories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/news" routerLinkActive="active">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary-custom text-white px-3 ms-2" routerLink="/donate">
+            <i class="fas fa-heart me-1"></i>Donate
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-success-custom text-white px-3 ms-2" routerLink="/volunteer">
+            <i class="fas fa-hands-helping me-1"></i>Volunteer
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

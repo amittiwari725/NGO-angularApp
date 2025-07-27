@@ -1,0 +1,328 @@
+// Hero Section
+.hero-section {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.9), rgba(76, 175, 80, 0.8)),
+              url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    padding: 2rem 0;
+    
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .hero-buttons {
+      margin-bottom: 3rem;
+      
+      .btn {
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    
+    .hero-stats {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--accent-green);
+        margin-bottom: 0.5rem;
+      }
+      
+      .stat-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+  
+  .hero-image {
+    text-align: center;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// Program Cards
+.program-stats {
+  margin-top: 1rem;
+  
+  .stat-item {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    
+    i {
+      width: 20px;
+    }
+  }
+}
+
+// Impact Stats
+.impact-stat {
+  text-align: center;
+  padding: 2rem 1rem;
+  
+  .impact-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(74, 144, 226, 0.3);
+    
+    i {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  
+  .impact-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+  
+  .impact-label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+}
+
+// Achievement Badge
+.achievement-badge {
+  background: linear-gradient(135deg, #FFF3CD, #F8D7DA);
+  border: 1px solid #F0AD4E;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #856404;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+// Testimonials
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px var(--shadow);
+  height: 100%;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-content {
+    position: relative;
+    margin-bottom: 2rem;
+    
+    .quote-icon {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      font-size: 2rem;
+      color: var(--primary-blue);
+      opacity: 0.3;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-left: 1rem;
+    }
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    
+    .author-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      border: 3px solid var(--soft-blue);
+    }
+    
+    .author-info {
+      .author-name {
+        margin-bottom: 0.2rem;
+        color: var(--text-dark);
+        font-weight: 600;
+      }
+      
+      .author-role {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Call to Action Section
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+  padding: 100px 0;
+  
+  .cta-buttons {
+    .btn {
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero-section {
+    .hero-content {
+      text-align: center;
+      
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .hero-buttons {
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+      }
+      
+      .hero-stats {
+        margin-top: 2rem;
+        
+        .stat-number {
+          font-size: 1.5rem;
+        }
+        
+        .stat-label {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
+  .impact-stat {
+    margin-bottom: 2rem;
+    
+    .impact-icon {
+      width: 60px;
+      height: 60px;
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .impact-number {
+      font-size: 2rem;
+    }
+  }
+  
+  .testimonial-card {
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section {
+    padding: 60px 0;
+    
+    .cta-buttons {
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    background-attachment: scroll;
+    
+    .hero-content {
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .impact-stat {
+    .impact-number {
+      font-size: 1.5rem;
+    }
+  }
+}
