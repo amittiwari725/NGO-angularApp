@@ -7,6 +7,11 @@ export const routes: Routes = [
     title: 'Home - SWAJANA Foundation'
   },
   {
+    path: 'auth',
+    loadComponent: () => import('./pages/auth/auth').then(m => m.AuthComponent),
+    title: 'Register / Login - SWAJANA Foundation'
+  },
+  {
     path: 'about',
     loadComponent: () => import('./pages/about/about').then(m => m.AboutComponent),
     title: 'About Us - SWAJANA Foundation'
